@@ -1,8 +1,7 @@
 
-```markdown
 # 🧠 Brain Tumor Detection Dashboard
 
-This project is a web-based dashboard built using **Streamlit** that detects brain tumors in MRI images using a Convolutional Neural Network (CNN). It includes model training, evaluation, and a user interface for uploading MRI images and predicting whether a tumor is present.
+This project is a web-based dashboard built using **Streamlit** that detects brain tumors in MRI images using a Convolutional Neural Network (CNN). It includes model training, evaluation, and a user interface for real-time predictions.
 
 ---
 
@@ -18,6 +17,21 @@ This project is a web-based dashboard built using **Streamlit** that detects bra
 
 ## 📂 Project Structure
 
+```
+BrainTumorScan/
+├── app/
+│   └── app.py
+├── data/
+│   ├── yes/
+│   └── no/
+├── models/
+│   └── brain_tumor_cnn.h5
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+---
 
 ## 🧑‍💻 Installation
 
@@ -31,20 +45,23 @@ This project is a web-based dashboard built using **Streamlit** that detects bra
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/BrainTumorScan.git
+git clone https://github.com/Bharath200403/BrainTumorScan.git
 cd BrainTumorScan
 
 # 2. (Optional but recommended) Create a virtual environment
-py -3.8 -m venv venv
-venv\Scripts\activate   # On Windows
-# source venv/bin/activate  # On Linux/macOS
+python -m venv venv
+
+# On Windows:
+venv\Scripts\activate
+# On Linux/macOS:
+# source venv/bin/activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
 
 # 4. Run the application
 streamlit run app/app.py
-````
+```
 
 ---
 
@@ -77,10 +94,10 @@ Version: 3.20.3
 
 ## 📈 Model Details
 
-* **Architecture**: CNN with Conv2D, MaxPooling, Flatten, Dense, Dropout
-* **Loss**: Binary Crossentropy
-* **Optimizer**: Adam
-* **Evaluation Metrics**: Accuracy, Confusion Matrix, ROC-AUC
+- **Architecture**: CNN with Conv2D, MaxPooling, Flatten, Dense, Dropout
+- **Loss**: Binary Crossentropy
+- **Optimizer**: Adam
+- **Evaluation Metrics**: Accuracy, Confusion Matrix, ROC-AUC
 
 ---
 
@@ -88,19 +105,19 @@ Version: 3.20.3
 
 After training, you can upload your own MRI image using the web interface. The model will classify it as either:
 
-* 🔴 **Tumor Detected**
-* 🟢 **No Tumor Detected**
+- 🔴 **Tumor Detected**
+- 🟢 **No Tumor Detected**
 
-> Make sure `models/brain_tumor_cnn.h5` exists after training. If not, re-run the training section in `app.py`.
+> Make sure `models/brain_tumor_cnn.h5` exists after training. If not, re-run the training section in `app/app.py`.
 
 ---
 
 ## 📊 Sample Visualizations
 
-* Accuracy/Loss over epochs
-* Confusion Matrix
-* ROC Curve
-* Uploaded MRI image with prediction result
+- Accuracy/Loss over epochs
+- Confusion Matrix
+- ROC Curve
+- Uploaded MRI image with prediction result
 
 ---
 
@@ -120,9 +137,9 @@ You can get brain MRI datasets from sources like [Kaggle](https://www.kaggle.com
 
 ## 🙌 Acknowledgments
 
-* [TensorFlow](https://www.tensorflow.org/)
-* [Streamlit](https://streamlit.io/)
-* [Kaggle Datasets](https://www.kaggle.com/)
+- [TensorFlow](https://www.tensorflow.org/)
+- [Streamlit](https://streamlit.io/)
+- [Kaggle Datasets](https://www.kaggle.com/)
 
 ---
 
@@ -134,10 +151,6 @@ This project is open-source and free to use under the [MIT License](LICENSE).
 
 ## 🔗 Connect
 
-Built with ❤️ by Bharath C O
-🚀 Let's innovate with AI and health-tech
+Built with ❤️ by Bharath C O  
+🚀 Let's innovate with AI and health-tech  
 📬 [LinkedIn](https://www.linkedin.com/in/bharath-c-o-226a1229a/)
-
-````
-
----
